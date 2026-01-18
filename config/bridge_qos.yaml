@@ -1,0 +1,15 @@
+# bridge_qos.yaml
+/**:
+  ros__parameters:
+    qos_overrides:
+      /camera/image_raw:
+        publisher:
+          reliability: "best_effort"
+          history: "keep_last"
+          depth: 1
+      # ADD THIS BLOCK FOR LIDAR
+      /scan:
+        publisher:
+          reliability: "best_effort"
+          history: "keep_last"
+          depth: 1

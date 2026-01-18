@@ -83,6 +83,8 @@
         <material>Gazebo/Blue</material>
     </gazebo>
 
+
+<!--Right Wheel-->
     <joint name="right_wheel_joint" type="continuous">
         <parent link="chassis"/>
         <child link="right_wheel"/>
@@ -90,7 +92,6 @@
         <axis xyz="0 0 -1"/>
     </joint>
 
-<!--Right Wheel-->
     <link name="right_wheel">
         <visual>
             <geometry>
@@ -145,7 +146,7 @@
 
     <gazebo>
         <plugin filename="gz-sim-joint-state-publisher-system" name="gz::sim::systems::JointStatePublisher">
-        <topic>/joint_states</topic>
+        <topic>joint_states</topic>
         <joint_name>left_wheel_joint</joint_name>
         <joint_name>right_wheel_joint</joint_name>
         </plugin>
