@@ -13,8 +13,7 @@
             <geometry>
                 <cylinder radius="0.05" length="0.04"/>
             </geometry>
-            <material name="red">
-                <color rgba="1 0 0 1"/> </material>
+            <material name="red"/>
         </visual>
         <collision>
             <geometry>
@@ -26,16 +25,7 @@
         </xacro:inertial_cylinder>
     </link>
 
-
-    <gazebo>
-        <plugin
-            filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
-            <render_engine>ogre2</render_engine>
-        </plugin>
-    </gazebo>
-
     <gazebo reference="laser_frame">
-        <material>Gazebo/Red</material>
 
         <sensor name="laser" type="gpu_lidar">
             <pose> 0 0 0 0 0 0 </pose>
