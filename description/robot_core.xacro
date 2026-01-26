@@ -23,6 +23,10 @@
         <color rgba="1 0 0 1"/>
     </material>
 
+    <material name="purple" >
+        <color rgba="0.49411764705882355 0.11764705882352941 0.611764705882353 1.0" />
+    </material>
+
 <!-- Base Link -->
     <link name="base_link">
     </link>

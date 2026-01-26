@@ -12,7 +12,7 @@ def generate_launch_description():
     gpu_env = SetEnvironmentVariable('__NV_PRIME_RENDER_OFFLOAD', '1')
     nvidia_lib = SetEnvironmentVariable('__GLX_VENDOR_LIBRARY_NAME', 'nvidia')
 
-    # 1. Define arguments FIRST so they can be used below
+    # Define arguments FIRST so they can be used below
     world_arg = DeclareLaunchArgument(
         'world',
         default_value='empty.sdf',
@@ -21,8 +21,7 @@ def generate_launch_description():
 
     world_config = LaunchConfiguration('world')
 
-    # --- FIX 1: Force NVIDIA GPU settings ---
-    # set_gpu_offload = SetEnvironmentVariable('__NV_PRIME_RENDER_OFFLOAD', '1')
+    # Force NVIDIA GPU settings 
     set_render_engine = SetEnvironmentVariable('GZ_SIM_RENDER_ENGINE', 'ogre2')
 
     package_name='autobot_ros' 
@@ -33,7 +32,6 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'true'}.items()
     )
 
-    # --- FIX 2: Now we can safely use 'world_config' ---
 # Include the Gazebo launch file
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
@@ -44,11 +42,10 @@ def generate_launch_description():
             world_config
         ], 'on_exit_shutdown': 'true'}.items()
     )
-
     spawn_entity = Node(package='ros_gz_sim', executable='create',
                         arguments=['-topic', 'robot_description',
-                                   '-name', 'my_bot',
-                                   '-z', '0.5'],
+                                '-name', 'my_bot',
+                                '-z', '0.5'],
                         output='screen')
 
     # --- Bridge Node Configuration ---
@@ -70,7 +67,11 @@ def generate_launch_description():
         executable='parameter_bridge',
         parameters=[{
             'config_file': bridge_params,
-        },bridge_qos],
+            # --- CRITICAL FIX FOR RTAB-MAP ---
+            # This ensures the robot links (TF) are sent with the correct "Durability"
+            # so RTAB-Map can see the robot model immediately.
+            'qos_overrides./tf_static.publisher.durability': 'transient_local',
+        }, bridge_qos],
         output='screen'
     )
 
