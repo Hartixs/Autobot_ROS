@@ -1,0 +1,152 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v5.4.0)
+
+newmtl pole_002
+Kd 0.847523391 0.0601835325 0.0274479687
+illum 1
+
+newmtl connector_head
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+
+newmtl grayprint_004
+Kd 0.158729464 0.158729464 0.158729464
+illum 1
+
+newmtl connector_head_004
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+
+newmtl pole
+Kd 0.847523391 0.0601835325 0.0274479687
+illum 1
+
+newmtl connector_pole
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+
+newmtl cqupthxc
+illum 1
+map_Kd ./HXCtext.png
+
+newmtl grayprint_003
+Kd 0.158729464 0.158729464 0.158729464
+illum 1
+
+newmtl connector_head_003
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+
+newmtl rcbbs
+illum 1
+map_Kd ./rcbbstext.png
+
+newmtl fence
+Kd 0.306829453 0.122046046 0
+illum 1
+
+newmtl grayprint_002
+Kd 0.158729464 0.158729464 0.158729464
+illum 1
+
+newmtl connector_head_002
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+
+newmtl cqupt
+illum 1
+map_Kd ./cqupttext.png
+
+newmtl wood
+Kd 0.117286168 0.0334536955 0
+illum 1
+
+newmtl bottom
+Kd 0.800000012 0.800000012 0.800000012
+illum 1
+
+newmtl top
+Kd 0.800000012 0.800000012 0.800000012
+illum 1
+
+newmtl acrylic
+Kd 0.800000012 0.800000012 0.800000012
+illum 1
+
+newmtl blue2
+Kd 0.136915937 0.585362077 0.758765757
+illum 1
+
+newmtl blue0
+Kd 0 0.0134183317 1.00603378
+illum 1
+
+newmtl red3
+Kd 0.891733587 0.514330626 0.363447756
+illum 1
+
+newmtl white3
+Kd 0.800000012 0.800000012 0.800000012
+illum 1
+
+newmtl darkgreen
+Kd 0.0175215956 0.0858930647 0.00541364867
+illum 1
+
+newmtl lightgreen
+Kd 0.0133739421 0.164953843 0.0401993394
+illum 1
+
+newmtl lightyellow
+Kd 0.32198754 0.462091148 0.0944875851
+illum 1
+
+newmtl red2
+Kd 0.756300569 0.380414605 0.306646228
+illum 1
+
+newmtl red0
+Kd 0.699030399 0.0295780897 0.0142994924
+illum 1
+
+newmtl blue3
+Kd 0.142773286 0.665049493 0.670892894
+illum 1
+
+newmtl blue1
+Kd 0.136915937 0.585362077 0.758765757
+illum 1
+
+newmtl red1
+Kd 0.828788638 0.751387775 0.705991268
+illum 1
+
+newmtl grayprint_001
+Kd 0.158729464 0.158729464 0.158729464
+illum 1
+
+newmtl connector_head_001
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+
+newmtl wood_002
+Kd 0.117286168 0.0334536955 0
+illum 1
+
+newmtl textcolor
+Kd 0.800000072 0.0121857477 0.0708869323
+Ke 0 0 0
+illum 1
+
+newmtl grayprint
+Kd 0.158729464 0.158729464 0.158729464
+illum 1
+
+newmtl grayprint_005
+Kd 0.158729464 0.158729464 0.158729464
+illum 1
+
+newmtl connector_head_005
+Kd 0.0652537644 0.0652537644 0.0652537644
+illum 1
+

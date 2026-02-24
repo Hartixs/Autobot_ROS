@@ -2,8 +2,8 @@ Last Config Dir: /home/arvind/.rviz2
 Last Image Dir: ""
 Recent Configs:
   - /home/arvind/.rviz2/default.rviz
-  - /home/arvind/dev_ws/src/autobot_ros/config/c1.rviz
+  - /home/arvind/swarm_ws/src/autobot_ros/config/c1.rviz
   - /.rviz
-  - /home/arvind/dev_ws/src/autobot_ros/config/veiw_autobot
-  - /home/arvind/dev_ws/src/autobot_ros/config/veiw_autobot.rviz
-  - /home/arvind/dev_ws/src/autobot_ros/config/view_autobot.rviz
+  - /home/arvind/swarm_ws/src/autobot_ros/config/veiw_autobot
+  - /home/arvind/swarm_ws/src/autobot_ros/config/veiw_autobot.rviz
+  - /home/arvind/swarm_ws/src/autobot_ros/config/view_autobot.rviz
