@@ -75,14 +75,22 @@
         <visual name='visual'>
           <geometry>
             <mesh>
+<<<<<<< HEAD
               <uri>file:///home/arvind/swarm_ws/src/autobot_ros/worlds/arena/thearena.dae</uri>
+=======
+              <uri>file:///home/arvind/dev_ws/src/autobot_ros/worlds/arena/thearena.dae</uri>
+>>>>>>> 31ff829 (updated nav)
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
+<<<<<<< HEAD
               <uri>file:///home/arvind/swarm_ws/src/autobot_ros/worlds/arena/thearena.dae</uri>
+=======
+              <uri>file:///home/arvind/dev_ws/src/autobot_ros/worlds/arena/thearena.dae</uri>
+>>>>>>> 31ff829 (updated nav)
             </mesh>
           </geometry>
         </collision>

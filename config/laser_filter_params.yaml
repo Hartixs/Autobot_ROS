@@ -1,0 +1,22 @@
+# laser_filter_params.yaml
+# Drop this in src/autobot_ros/config/
+# Strips max-range and inf returns from /scan before Nav2 or SLAM sees them.
+# Output topic: /scan_filtered
+
+scan_filter_chain:
+
+  # Remove returns at or beyond 11.5m (lidar max = 12m, so this kills ghost walls)
+  - name: range_filter
+    type: laser_filters/LaserScanRangeFilter
+    params:
+      use_message_range_limits: false
+      lower_threshold: 0.1        # ignore self-hits < 10cm
+      upper_threshold: 11.5       # ignore max-range returns (12m ghosts)
+      lower_replacement_value: -.inf
+      upper_replacement_value: .inf
+
+  # Remove any remaining inf/nan values from the scan
+  - name: inf_filter
+    type: laser_filters/LaserScanInfFilter
+    params:
+      inf_is_valid: false

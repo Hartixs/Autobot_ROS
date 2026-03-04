@@ -67,7 +67,11 @@
       <self_collide>false</self_collide>
     </model>
     <include>
+<<<<<<< HEAD
       <uri>file:///home/arvind/swarm_ws/src/autobot_ros/worlds/arena</uri>
+=======
+      <uri>file:///home/arvind/dev_ws/src/autobot_ros/worlds/arena</uri>
+>>>>>>> 31ff829 (updated nav)
       <name>arena</name>
       <pose>0.5927285829846749 0.23532044325379964 0 0 0 0</pose>
     </include>

@@ -6,7 +6,11 @@ from launch_ros.actions import Node
 def generate_launch_description():
     # 1. Path to your mask yaml
     pkg_share = get_package_share_directory('autobot_ros')
+<<<<<<< HEAD
     mask_yaml_file = '/home/arvind/swarm_ws/keepout.yaml' 
+=======
+    mask_yaml_file = '/home/arvind/dev_ws/keepout.yaml' 
+>>>>>>> 31ff829 (updated nav)
 
     return LaunchDescription([
         # 2. Map Server for the Mask

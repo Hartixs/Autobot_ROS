@@ -20,14 +20,22 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
+<<<<<<< HEAD
     #map_file_name: /home/arvind/swarm_ws/first_map_serial
+=======
+    #map_file_name: /home/arvind/dev_ws/first_map_serial
+>>>>>>> 31ff829 (updated nav)
     #map_start_pose: [0.0, 0.0, 0.0]
     #map_start_at_dock: true
 
     debug_logging: false
     throttle_scans: 1
     transform_publish_period: 0.02 #if 0 never publishes odometry
+<<<<<<< HEAD
     map_update_interval: 5.0
+=======
+    map_update_interval: 1.0
+>>>>>>> 31ff829 (updated nav)
     resolution: 0.025
     max_laser_range: 20.0 #for rastering images
     minimum_time_interval: 0.5
