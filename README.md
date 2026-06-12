@@ -1,4 +1,4 @@
-# 🤖 Robocon 2026: Robominds
+# Robocon 2026: Robominds
 
 ![ROS2](https://img.shields.io/badge/ros2-jazzy-blue) ![Gazebo](https://img.shields.io/badge/Gazebo-Harmonic-orange) ![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-yellow)
 
@@ -38,7 +38,7 @@ Out-of-the-box Nav2 parameters just weren't cutting it for the speeds and dynami
 
 ---
 
-## 🚀 Getting Started (For Juniors)
+## Getting Started (For Juniors)
 
 If you're taking this over or want to run the sim yourself, here's how to set it up.
 
